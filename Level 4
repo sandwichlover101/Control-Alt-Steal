@@ -1,1 +1,25 @@
 // Level 4 Code
+<!DOCTYPE html>
+<html>
+  <head>
+<title> Level </title>
+<script src=" .js"></script>
+<link rel="stylesheet" href=" .css">
+  </head>
+  <body>
+<h1> <b> Narrator: </b> Hello Detective, welcome to level . Congrats on making it this far, but don't celebrate yet we still have more work ahead 
+of us. Head Detective Cadet will catch you up. </h1>
+<br>
+<h2> <b> Detective Cadet: </b> Input case context/information </h2>
+<br>
+<img id="map" src=" ">
+<br>
+<h2> <b> Interrogation <b> </h2>
+<br>
+<h2> Interrogation text </h2>
+<br>
+<button onClick="clue1() ;">Clue 1</button>
+<br>
+<button onClick="clue2() ;">Clue 2</button>
+<br>
+  </body>
