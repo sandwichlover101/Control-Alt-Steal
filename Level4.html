@@ -7,18 +7,23 @@
 <link rel="stylesheet" href=" .css">
   </head>
   <body>
-    <div class="dissapear">
+    <div class="dissapear" id="intro">
 <h1> Hello <span class="auto-type"></span> </h1>
     </div>
-    <script src= "https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script>
 var typed = new Typed(".auto-type", {
   strings: ["Hello Detective, welcome to level . Congrats on making it this far, but don't celebrate yet we still have more work ahead 
 of us. Head Detective Cadet will catch you up."],
-  typeSpeed: 150,
-  backSpeed: 150,
-  loop: true
-})
+  typeSpeed: 40,
+  backSpeed: 0,
+  loop: false,
+   showCursor: false,
+        onComplete: function () {
+          setTimeout(function () {
+            document.getElementById("intro").style.display = "none";
+          }, 2000);
+        }
+});
       
     </script>
 <br>
