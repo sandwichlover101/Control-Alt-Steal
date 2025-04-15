@@ -8,6 +8,35 @@
 <p>Level 1</p>
  </head>
  <body>
+<p> <b> Narrator: </b> Hello Detective, welcome to level . Congrats on making it this far, but don't celebrate yet we still have more work ahead 
+of us. Head Detective Cadet will catch you up. </p>
+<br>
+<p> <b> Detective Cadet: </b> At 1:21 AM, 57 year old Walter Griggs was found dead in his penthouse apartment on a Friday night.
+Apartment investigation shows no sign of struggle, no blood, no forced entry. He appears to have simply fallen asleep and never woken up. 
+ </p>
+<br>
+<img id="map" src=" ">
+<br>
+<p> <b> Walter Griggs Profile Report </b> </p>
+<br>
+<p> 57 Years old 
+Source of income: Unknown
+House located 2 miles from train station
+House security camera stops working  (1:03 AM)
+Victim seen at casino from 8-10:30 PM
+Credit card missing from victims wallet
+ </p>
+<br>
+<p> <b> Interrogation </b> </p>
+<br>
+<p> Devyn Dahmer: “I was just watching TV at my house, and then at 11pm I went to sleep”
+Valentino Carolino: “My shift at the casino ended at 11pm at the casino, I got home at 11:30 and went to sleep. I didnt even see him at the casino”
 
+ </p>
+<br>
+<button onClick="clue1() ;">Clue 1</button>
+<br>
+<button onClick="clue2() ;">Clue 2</button>
+<br>
 
 
