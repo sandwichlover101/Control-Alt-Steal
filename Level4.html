@@ -37,7 +37,12 @@ strings: ["Hello Detective, welcome to level . Congrats on making it this far, b
 <br>
 <p> Interrogation text </p>
 <br>
-<button onClick="clue1() ;">Clue 1</button>
+ <button id="demo" onclick="myFunction()">Clue.</button>
+  <script>
+   function myFunction() {
+    document.getElementById("demo").innerHTML = "...";
+    }
+  </script>
 <br>
 <button onClick="clue2() ;">Clue 2</button>
 <br>
