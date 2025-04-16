@@ -12,9 +12,11 @@
     </div>
     <script>
 var typed = new Typed(".auto-type", {
-strings: ["Hello Detective, welcome to level . Congrats on making it this far, but don't celebrate yet — we still have more work ahead of us. Head Detective Cadet will catch you up.", ""Detective Cadet: Info on crime scene...""],
+strings: ["Hello Detective, welcome to level . Congrats on making it this far, but don't celebrate yet — we still have more work ahead of us. Head Detective Cadet will catch you up.", "Detective Cadet: Input case context/information", "Here is the list of suspects we have for this crime: ___" , "Now, use the context, the interegation, and the clues to figure out the one behind the crime. Goodluck!!"],
   typeSpeed: 20,
-  backSpeed: 5,
+ fadeOut: true,
+  fadeOutClass: 'type-fade-out',
+  fadeOutDelay: 1000,
   loop: false,
    showCursor: false,
         onComplete: function () {
