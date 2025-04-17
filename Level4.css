@@ -31,3 +31,7 @@ button {
   cursor: pointer; 
   outline: none; 
 }
+ .profilepic {
+height: 200px; 
+  border-radius: 50%; 
+ }
