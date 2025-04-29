@@ -1,42 +1,59 @@
-// Level 1 Code
 <!DOCTYPE html>
+<!-- Level 4 Code -->
 <html>
   <head>
-   <title>Level 1</title>
-   <script src="level1.js"></script>
-   <link rel="stylesheet" href="level1.css">
-<p>Level 1</p>
- </head>
- <body>
-<p> <b> Narrator: </b> Hello Detective, welcome to level . Congrats on making it this far, but don't celebrate yet we still have more work ahead 
-of us. Head Detective Cadet will catch you up. </p>
+<title> Level 1</title>
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+<link rel="stylesheet" href=" level1.css">
+  </head>
+  <body>
+    <div class="dissapear" id="intro">
+<h1><span class="auto-type"></span> </h1>
+    </div>
+    <script>
+var typed = new Typed(".auto-type", {
+strings: ["Hello Detective, welcome to level 1. Head Detective Cadet will catch>
+  typeSpeed: 30,
+  fadeOut: true,
+  fadeOutClass: 'type-fade-out',
+  fadeOutDelay: 1000,
+  loop: false,
+ showCursor: false,
+        onComplete: function () {
+          setTimeout(function () {
+            document.getElementById("intro").style.display = "none";
+          }, 2000);
+        }
+});
+
+    </script>
 <br>
-<p> <b> Detective Cadet: </b> At 1:21 AM, 57 year old Walter Griggs was found dead in his penthouse apartment on a Friday night.
-Apartment investigation shows no sign of struggle, no blood, no forced entry. He appears to have simply fallen asleep and never woken up. 
+<p> <b> Detective Cadet: </b> At 1:21 AM, 57 year old Walter Griggs was found d>
+Our apartment investigation shows no sign of struggle, no blood, no forced entr>
  </p>
 <br>
-<img id="map" src=" ">
+<img id="map" src=""
+  style="width: 500px; height: auto;">
 <br>
-<p> <b> Walter Griggs Profile Report </b> </p>
-<br>
-<p> 57 Years old 
-Source of income: Unknown
-House located 2 miles from train station
-House security camera stops working  (1:03 AM)
-Victim seen at casino from 8-10:30 PM
-Credit card missing from victims wallet
- </p>
-<br>
+<img id="Devyn Dahmer" src="https://media-hosting.imagekit.io/04accc691bb141b9/>
+ <img id="Valentina Carolina" src="https://sdmntprsouthcentralus.oaiusercontent>
 <p> <b> Interrogation </b> </p>
 <br>
-<p> Devyn Dahmer: “I was just watching TV at my house, and then at 11pm I went to sleep”
-Valentino Carolino: “My shift at the casino ended at 11pm at the casino, I got home at 11:30 and went to sleep. I didnt even see him at the casino”
+  <p> <b> Devyn Dahmer: </b> "I was just watching TV at my house, and then at 1>
+    <br>
+<b> Valentino Carolino: </b> "My shift at the casino ended at 11pm at the casin>
+</p>
+<br>
+ <button id="demo" onclick="myFunction()">Clue.</button>
+  <script>
+   function myFunction() {
+    document.getElementById("demo").innerHTML = "...";
+    }
+  </script>
+<br>
+<button onclick="window.location.href='scene.html'">Go to Scene</button>
+<br>
 
- </p>
-<br>
-<button onClick="clue1() ;">Clue 1</button>
-<br>
-<button onClick="clue2() ;">Clue 2</button>
-<br>
-
+  </body>
+  </html>
 
