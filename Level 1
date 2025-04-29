@@ -12,13 +12,13 @@
     </div>
     <script>
 var typed = new Typed(".auto-type", {
-strings: ["Hello Detective, welcome to level 1. Head Detective Cadet will catch>
+strings: ["Hello Detective, welcome to level 1. Head Detective Cadet will catch you up with your first investigation.", "Detective Cadet: At 1:21 AM, 57 year old Walter Griggs was found dead in his penthouse a Friday night. Our apartment investigation shows no sign of struggle, no blood, no forced entry. He appears to have simply fallen asleep and never woken up.", "Here is the list of suspects we have collected for this crime: Valentino Carolino and Devyn Dahmer", "Now, use everything you see to figure out the one behind the crime. Goodluck!!"],
   typeSpeed: 30,
   fadeOut: true,
   fadeOutClass: 'type-fade-out',
   fadeOutDelay: 1000,
   loop: false,
- showCursor: false,
+   showCursor: false,
         onComplete: function () {
           setTimeout(function () {
             document.getElementById("intro").style.display = "none";
@@ -28,32 +28,28 @@ strings: ["Hello Detective, welcome to level 1. Head Detective Cadet will catch>
 
     </script>
 <br>
-<p> <b> Detective Cadet: </b> At 1:21 AM, 57 year old Walter Griggs was found d>
-Our apartment investigation shows no sign of struggle, no blood, no forced entr>
+<p> <b> Detective Cadet: </b> At 1:21 AM, 57 year old Walter Griggs was found dead in his penthouse apartment on a Friday night.
+Our apartment investigation shows no sign of struggle, no blood, no forced entry. He appears to have simply fallen asleep and never woken up.
  </p>
+
+<img id="map" src="Map.png">
 <br>
-<img id="map" src=""
-  style="width: 500px; height: auto;">
-<br>
-<img id="Devyn Dahmer" src="https://media-hosting.imagekit.io/04accc691bb141b9/>
- <img id="Valentina Carolina" src="https://sdmntprsouthcentralus.oaiusercontent>
+<p> <b> Listed Suspects: </b></p>
+<img id="Devyn Dahmer" src="devyn.png">
+ <img id="Valentina Carolina" src="valentino1.png">
 <p> <b> Interrogation </b> </p>
 <br>
-  <p> <b> Devyn Dahmer: </b> "I was just watching TV at my house, and then at 1>
+  <p> <b> Devyn Dahmer: </b> "I was just watching TV at my house, and then at 11pm I went to sleep"
     <br>
-<b> Valentino Carolino: </b> "My shift at the casino ended at 11pm at the casin>
+<b> Valentino Carolino: </b> "My shift at the casino ended at 11pm at the casino, I got home at 11:30 and went to sleep. I didnt even see him at the casino"
 </p>
 <br>
- <button id="demo" onclick="myFunction()">Clue.</button>
-  <script>
-   function myFunction() {
-    document.getElementById("demo").innerHTML = "...";
-    }
-  </script>
+
+
 <br>
 <button onclick="window.location.href='scene.html'">Go to Scene</button>
 <br>
-
+<button onclick
   </body>
   </html>
 
