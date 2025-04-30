@@ -49,7 +49,23 @@ Our apartment investigation shows no sign of struggle, no blood, no forced entry
 <br>
 <button onclick="window.location.href='scene.html'">Go to Scene</button>
 <br>
-<button onclick
+<script>
+function criminal() {
+  let guess=prompt("Type in who is guilty");
+  if (guess=="Valentino Carolino") {
+    alert("Yay you guessed correctly");
+  }
+  else {
+    alert("wrong");
+  }
+}
+</script>
+
+    <button onclick="criminal();">Who is guilty?</button>
+
+  </body>
+  </html>
+
   </body>
   </html>
 
