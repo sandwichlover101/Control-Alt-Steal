@@ -65,7 +65,7 @@ document.getElementById("level2link").innerHTML += "<a href='level2.html'>Contin
 
     <button onclick="criminal();">Guess the criminal</button>
 
-<span id="level2link"></span>
+<span id="level2link" class="guess"></span>
 
 
   </body>
