@@ -12,7 +12,7 @@
     </div>
     <script>
 var typed = new Typed(".auto-type", {
-strings: ["Hello Detective, welcome to level 1. Head Detective Cadet will catch you up with your first investigation.", "Detective Cadet: At 1:21 AM, 57 year old Walter Griggs was found dead in his penthouse a Friday night. Our apartment investigation shows no sign of struggle, no blood, no forced entry. He appears to have simply fallen asleep and never woken up.", "Here is the list of suspects we have collected for this crime: Valentino Carolino and Devyn Dahmer", "Now, use everything you see to figure out the one behind the crime. Goodluck!!"],
+strings: ["Hello Detective, welcome to level 1. Head Detective Cadet will catch you up with your first investigation.", "Detective Cadet: At 1:21 AM, 57 year old Walter Griggs was found dead in his penthouse apartment on a Friday night. Our apartment investigation shows no sign of struggle, no blood, no forced entry. He appears to have simply fallen asleep and never woken up.", "Here is the list of suspects we have collected for this crime: Valentino Carolino and Devyn Dahmer", "Now, use everything you see to figure out the one behind the crime. Goodluck!!"],
   typeSpeed: 30,
   fadeOut: true,
   fadeOutClass: 'type-fade-out',
@@ -25,13 +25,12 @@ strings: ["Hello Detective, welcome to level 1. Head Detective Cadet will catch 
           }, 2000);
         }
 });
-
+      
     </script>
 <br>
 <p> <b> Detective Cadet: </b> At 1:21 AM, 57 year old Walter Griggs was found dead in his penthouse apartment on a Friday night.
-Our apartment investigation shows no sign of struggle, no blood, no forced entry. He appears to have simply fallen asleep and never woken up.
+Our apartment investigation shows no sign of struggle, no blood, no forced entry. He appears to have simply fallen asleep and never woken up. 
  </p>
-
 <img id="map" src="Map.png">
 <br>
 <p> <b> Listed Suspects: </b></p>
@@ -44,14 +43,13 @@ Our apartment investigation shows no sign of struggle, no blood, no forced entry
 <b> Valentino Carolino: </b> "My shift at the casino ended at 11pm at the casino, I got home at 11:30 and went to sleep. I didnt even see him at the casino"
 </p>
 <br>
-
-
+ 
+  
 <br>
 <button onclick="window.location.href='scene.html'">Go to Scene</button>
-<br>
+
+
 <script>
-
-
 function criminal() {
   let guess=prompt("Guess the criminal");
   if (guess=="Valentino Carolino") {
@@ -67,11 +65,10 @@ document.getElementById("scene").style.display = "none";
 }
 </script>
 
-    <button onclick="criminal();" id="scene">Guess the criminal</button>
+    <button onclick="criminal();" id="scene">Guess the criminal</button>   
 
 <span id="level2link" class="guess"></span>
 
 
   </body>
   </html>
-
