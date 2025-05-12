@@ -51,23 +51,25 @@ Our apartment investigation shows no sign of struggle, no blood, no forced entry
 
 <script>
 function criminal() {
-  let guess=prompt("Guess the criminal");
-  if (guess=="Valentino Carolino") {
-document.getElementById("scene").style.display = "none";
+  let guess = prompt("Guess the criminal");
+  let level2link = document.getElementById("level2link");
 
-document.getElementById("level2link").innerHTML += "<a href='level2.html'>Good Job! Click here to continue</a>";
-
-  }
-  else {
-document.getElementById("scene").style.display = "none";
- document.getElementById("level2link").innerHTML += "Guess again!";
+  if (guess === "Valentino Carolino") {
+    level2link.innerHTML = "<a href='level2.html'>Good Job! Click here to continue</a>";
+    level2link.style.display = "block";
+   level2link.style.fontSize = "40px"; 
+  } else {
+    level2link.innerHTML = "Guess again!";
+    level2link.style.display = "block";
+   level2link.style.fontSize = "40px";
   }
 }
 </script>
-
-    <button onclick="criminal();" id="scene">Guess the criminal</button>   
+    <button onclick="criminal();" class="guess">Guess the criminal</button>
 
 <span id="level2link" class="guess"></span>
+
+
 
 
   </body>
