@@ -1,1 +1,77 @@
 // Level 3 Code
+
+<!DOCTYPE html>
+<!-- Level 3 Code -->
+<html>
+  <head>
+<title> Level 1</title>
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+<link rel="stylesheet" href=" level1.css">
+  </head>
+  <body>
+    <div class="dissapear" id="intro">
+<h1><span class="auto-type"></span> </h1>
+    </div>
+    <script>
+var typed = new Typed(".auto-type", {
+strings: ["Hello Detective, welcome to level 3. Head Detective Cadet will catch you up with this one.", "Detective Cadet: At 10 PM the police received anonymous tip that a shooting happened at 144 Claremont St, and at 11 PM the police identify a dead body later known as Bailey Davis. We were able to retrieve Bailey's bag as evidence.", "The list of suspects we have collected for this crime are Cameron Cartel, Bentley Hudson, Java Skripte and Williams Dej", "Goodluck!!"],
+  typeSpeed: 30,
+  fadeOut: true,
+  fadeOutClass: 'type-fade-out',
+  fadeOutDelay: 1000,
+  loop: false,
+   showCursor: false,
+        onComplete: function () {
+          setTimeout(function () {
+            document.getElementById("intro").style.display = "none";
+          }, 2000);
+        }
+});
+      
+    </script>
+<br>
+<p> <b> Detective Cadet: </b> At 10 PM the police received anonymous tip that shooting has happened at 144 Claremont St, and at
+11 PM the police identify a dead body later known as Bailey Davis. We were able to retrieve Bailey's bag as evidence.
+
+ </p>
+<img id="map" src="Map.png" style="width:1000px; height:700px">
+
+<p> <b> Listed Suspects: </b></p>
+<img id="Williams Dej" src="williamsdej.png">
+ <img id="Java Skripte" src="javaskripte.png">
+<img id="Bentley Hudson" src="bentleyhudson.png">
+<img id="Cameron Cartel" src="cameroncartel.png">
+
+
+<p> <b> Baileys Bag </b> </p>
+<img id="Baileys Bag"  style="width:800px; height:500px" src="https://content.fortune.com/wp-content/uploads/2015/06/lot-3664_js274_1_shot-1.jpg"> 
+  
+<br>
+<button onclick="window.location.href='scene.html'">Go to Scene</button>
+
+
+<script>
+function criminal() {
+  let guess = prompt("Guess the criminal");
+  let level2link = document.getElementById("level2link");
+
+  if (guess === "Valentino Carolino") {
+    level2link.innerHTML = "<a href='level2.html'>Good Job! Click here to continue</a>";
+    level2link.style.display = "block";
+   level2link.style.fontSize = "40px"; 
+  } else {
+    level2link.innerHTML = "Guess again!";
+    level2link.style.display = "block";
+   level2link.style.fontSize = "40px";
+  }
+}
+</script>
+    <button onclick="criminal();" class="guess">Guess the criminal</button>
+
+<span id="level2link" class="guess"></span>
+
+
+
+
+  </body>
+  </html>
