@@ -7,4 +7,7 @@ function criminal() {
     alert("wrong");
   }
 }
+function conclusion() {
+alert("Java Skripte was the killer, after he finished his work. Garry Yoo did not give Javas dad  a business deal a >
+}
 
