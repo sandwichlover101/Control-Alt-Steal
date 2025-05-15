@@ -1,1 +1,108 @@
 // Level 6 Code
+<!DOCTYPE html>
+<html>
+  <head>
+<title> Level 6 </title>
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+<link rel="stylesheet" href="level6.css">
+<script src="level6.js"> </script>
+  </head>
+  <body>
+    <div class="dissapear" id="intro">
+
+<h1><span class="auto-type"></span> </h1>
+    </div>
+    <script>
+var typed = new Typed(".auto-type", {
+strings: ["Hello Detective, welcome to Level 6. Head Detective Cadet will catch you up with your investigation.",
+"Detective Cadet: At 8:09pm on a Tuesday the police station received a call from Stumble Door who is a local fisher >
+ " He was walking towards Dons mansion to deliver his fish he caught that day and found dead Mr Don covered in blood>
+" Head Detective Cadet informed us that Mr Don is a powerful businessman and works at the bank.",
+" Mr Don was a 45 year old male and lived with his wife and his two kids Willy and Tommy in this house.",
+" Additionally next to Mr Don there was a note saying You only have 24 hours to find me otherwise more bodys will fa>
+"  Head Detective Cadet has gathered 9 suspects who have some grudges against Mr Don. ",
+"The suspcets are: Stumble Door, Williams Dej, Bently Hudson, Christine Crow, Lee Beery Shush, Gilgard Glif, Shawn C>
+"Who is the killer? What will happen in 24 hours?What is the killer's motive?Did Mr Don have enemies? "],
+  typeSpeed: 30,
+  fadeOut: true,
+  fadeOutClass: 'type-fade-out',
+  fadeOutDelay: 1000,
+  loop: false,
+   showCursor: false,
+        onComplete: function () {
+          setTimeout(function () {
+            document.getElementById("intro").style.display = "none";
+          }, 2000);
+        }
+});
+
+    </script>
+<br>
+<img id="map" src="" style="width: 500px; height: auto;">
+<br>
+<p> <b> Listed Suspects: </b></p>
+    <br>
+    <img id="Stumble Door" src=" ">
+      <img id="Bently Hudson" src="">
+    <img id="Valentina Carolina" src="">
+    <img id="Williams Dej(note height is 4.7 not 47)" src="">
+    <img id="Lee Beery Shush" src=" "class="profilepic">
+    <img id="Java Skripte" src="">
+    <img id="Christine Crow" src=" "class="profilepic">
+    <img id="Gilfard Gliff" src=" "class="profilepic">
+    <img id="Shawn Cinna" src=" "class="profilepic">
+<p> <b> Interrogation: </b> </p>
+<br>
+<p> <b>Stumble Door:</b>I was dropping off the fish for Mr Don and his family like I always do.
+We had a fight several years ago about him investing into my business,
+but Mr Don did not end up investing. I wouldn't kill him over that.
+<br>
+  <b>Williams Dej: </b>Yes, Mr Don and I were former business partners,
+but he ended up kicking me out cause I was too aggressive and wanted to use more technology for better profit.
+If you would have asked me then I would have killed him, but now we have no bad blood.
+I have not seen the guy in years plus I live near the Great Lake and my family is my alibi.
+<br>
+   <b>Bently Hudson:</b> Mr Don is a former college of mine.
+We do not work together anymore because umm.. of Mr Don switching to a banker in the business industry and
+not on the quantitative side.
+I also was at the casino last night.
+<br>
+    <b>Valentino Carolino: </b>Yeah I hate Mr Don, he and his stupid business were gambling at the casino and they b>
+I told him he had to pay for it and he refused and instead punished me in the nose.
+I could not work for several weeks and I was not able to press charges.
+I also was working at the casino last night and nobody was there, it was just me.
+<br>
+    <b>Lee Beery Shush: </b>Mr Dons kids would come to the school library all the time, until Mr Don found out and w>
+I confronted him about this and he said if I were to question him I would get sued.
+Atleast, now that he is dead his kids can come to the library.
+I also was out of town at the book fair in Leyton County.
+<br>
+    <b>Christine Crow:</b>Yes, I gave Mr Dons restaurant a 2 star review after he opened his new restaurant called D>
+It was terrible.
+The dumplings had too much meat in them and the dough was undercooked.
+Plus would this not give him a motive to kill me not the other way around?
+ And yes he did threaten me several times to take down my review, but he is not the first to do so.
+<br>
+    <b>Gilfard Gliff:</b> Yeah I used to sell my machines to Mr Don for his business with Mr Dej, but one day he sud>
+I nearly went bankrupt because of him.
+I also live with my mom by the riverside and I do not have a car.
+<br>
+   <b>Shawn Cinna:</b> Yeah his kids are little brats, they would always come into my class and never listen to me.
+I complained about this in our parent teacher conference with Mr Don and he sued me.
+I lost almost all of my savings because of him.
+I also live by the harbor and was working on my lesson plans.
+<br>
+  <b>Java Skripte:</b> Yeah Mr Don let me intern at his company once, but a week later he fired me because I was a b>
+That internship would have gotten me into my dream school and it was paid.
+I have to work double shifts now at the trainstation to save up for college, which is where I was last night.
+</p>
+<br>
+<button onclick="window.location.href='scene.html'">Go to Scene</button>
+<br>
+<p> For this case there is a killer and an accomplice so when you are guessing who did it type in the killer first a>
+   <button onclick="criminal()">Who is guilty?</button>
+<br>
+   <button onclick="conclusion()">Conclusion</button>
+ </body>
+  </html>
+
