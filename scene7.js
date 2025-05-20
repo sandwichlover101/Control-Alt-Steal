@@ -18,12 +18,12 @@ image.addEventListener('click', (event) => {
   }
  console.log(`Clicked at pixel: x=${x}, y=${y}`);
 
-  // Griggs: 233, 320
-  let griggs_distance = Math.sqrt( (x-233)**2 + (y-320)**2 );
+  // Griggs: 145, 448
+  let griggs_distance = Math.sqrt( (x-145)**2 + (y-448)**2 );
   console.log("Griggs distance: " + griggs_distance);
   if (griggs_distance < 75) {
      const griggsReport = `
-GARRY YOO CASE REPORT:
+AUTOPSY OF MICHAEL:
 
 - Age: 17 Years old
 - Body was found in the school parking lot(time of death 2:43pm)
@@ -53,10 +53,9 @@ image.addEventListener('click', (event) => {
     y *= scaleY;
   }
  console.log(`Clicked at pixel: x=${x}, y=${y}`);
-
-  // Griggs:  67, 286
-  let griggs_distance = Math.sqrt( (x-67)**2 + (y-286)**2 );
-  console.log("Griggs distance: " + griggs_distance);
+   // Griggs:  37, 470
+  let griggs_distance = Math.sqrt( (x-37)**2 + (y-470)**2 );
+ console.log("Griggs distance: " + griggs_distance);
   if (griggs_distance < 80) {
      const griggsReport = `
 STUDENTS BOOKS:
@@ -89,8 +88,8 @@ image.addEventListener('click', (event) => {
   }
  console.log(`Clicked at pixel: x=${x}, y=${y}`);
 
-  // Griggs: fix 354,259
-  let griggs_distance = Math.sqrt( (x-354)**2 + (y-259)**2 );
+  // Griggs: fix 51,377
+  let griggs_distance = Math.sqrt( (x-51)**2 + (y-377)**2 );
   console.log("Griggs distance: " + griggs_distance);
   if (griggs_distance < 80) {
      const griggsReport = `
@@ -108,6 +107,40 @@ CLOCK-IN FOR SHIFT:
     alert(griggsReport);
   }
 });
+image.addEventListener('click', (event) => {
+  let x = event.offsetX;
+  let y = event.offsetY;
+
+  // Handle scaling
+  const naturalWidth = image.naturalWidth;
+  const naturalHeight = image.naturalHeight;
+  const displayedWidth = image.width;
+  const displayedHeight = image.height;
+
+  if (naturalWidth !== displayedWidth || naturalHeight !== displayedHeight) {
+    const scaleX = naturalWidth / displayedWidth;
+    const scaleY = naturalHeight / displayedHeight;
+    x *= scaleX;
+    y *= scaleY;
+  }
+ console.log(`Clicked at pixel: x=${x}, y=${y}`);
+
+  // Griggs: 243, 411
+  let griggs_distance = Math.sqrt( (x-243)**2 + (y-411)**2 );
+  console.log("Griggs distance: " + griggs_distance);
+  if (griggs_distance < 75) {
+     const griggsReport = `
+BOOK OWNER
+
+the book belongs to Java Skripte
+    `;
+    alert(griggsReport);
+  }
+});
+
+
+
+
 
 
 
