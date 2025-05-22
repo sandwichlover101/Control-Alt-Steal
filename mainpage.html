@@ -1,1 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Control+Alt+Steal</title>
+ <link rel="stylesheet" href="main.css">
+<script src="main.js"></script>
+
+<script>
+ const level_urls = ["leve1","level2","level3","level4","level5","level6","level7","level8","level9"];
+ var level = 0;
+ function scroll_left() {
+   console.log('left');
+   if (level > 0) {
+    level--;
+    document.getElementById('url_display').innerHTML = '<a href="'+level_urls[level]+'+html.">'+level_urls[level]+'</a>';
+   }
+   document.getElementById('level-span').style.backgroundImage = "mainpage1.png";
+}
+
+function scroll_right() {
+  console.log('right');
+  if (level < level_urls.length-1) {
+    level++;
+    document.getElementById('url_display').innerHTML = '<a href="'+level_urls[level]+'+html.">'+level_urls[level]+'</a>';
+  }
+}
+</script>
+  </head>
+  <body>
+       <button>
+    <div>
+      <h1>Control+Alt+Steal</h1>
+    </div>
+</button>
+<br><br>
+ <span id="right" onclick="scroll_left();" style="font-size:200%;font-weight:bold;">
+&lArr;
+</span>
+&nbsp;
+ <span class="level" id="url_display" id="level-span">
+<a href="level1.html" style="color:#22D;font-size:200%;text-decoration:none;">level1</a>
+  </span>
+&nbsp;
+ <span class="level" id="select" onclick="scroll_right();" style="font-size:200%;font-weight:bold;">
+&rArr;
+</span>
+  </span>
+</span>
+<br>
+<br>
+<br>
+<button>
+<a href="http://172.27.67.33/~layla/gameveiw/">game overveiw</a>
+</button>
+  </body>
+</html>
+
+
+
 
