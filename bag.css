@@ -1,0 +1,14 @@
+.reciept {
+width: 300px;
+height: 400px;
+}
+
+body {
+background-color: #F63586;
+
+}
+
+.phone {
+float: right;
+position: top;
+}
