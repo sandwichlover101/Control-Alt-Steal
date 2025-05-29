@@ -67,7 +67,7 @@ strings: ["Hello Detective, welcome to Level 8. Head Detective Cadet will catch 
 <irst and then the accomplice, like so Layla Cadet and Arrow Bar</p>
    <button onclick="criminal()">Who is guilty?</button>
 <br>
-   <button onclick="conclusion()">Conclusion</button>
+   
  </body>
   </html>
 
