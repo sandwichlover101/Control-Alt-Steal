@@ -1,59 +1,200 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Control+Alt+Steal</title>
- <link rel="stylesheet" href="main.css">
-<script src="main.js"></script>
+<html lang="en">
+<head>
+<link rel="stylesheet" href="trial.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Control+Alt Steal - Official Website</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+      background-color: #111;
+      color: #fff;
+    }
 
-<script>
- const level_urls = ["leve1","level2","level3","level4","level5","level6","level7","level8","level9"];
- var level = 0;
- function scroll_left() {
-   console.log('left');
-   if (level > 0) {
-    level--;
-    document.getElementById('url_display').innerHTML = '<a href="'+level_urls[level]+'+html.">'+level_urls[level]+'</a>';
-   }
-   document.getElementById('level-span').style.backgroundImage = "mainpage1.png";
-}
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 40px;
+      background-color: #000;
+      border-bottom: 1px solid #444;
+    }
 
-function scroll_right() {
-  console.log('right');
-  if (level < level_urls.length-1) {
-    level++;
-    document.getElementById('url_display').innerHTML = '<a href="'+level_urls[level]+'+html.">'+level_urls[level]+'</a>';
-  }
-}
-</script>
-  </head>
-  <body>
-       <button>
+    header h1 {
+      margin: 0;
+      font-size: 1.5em;
+    }
+
+    nav a {
+      color: #fff;
+      margin-left: 20px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .hero {
+      background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFnRzPwlA9GGCLFmsPyrqaWuqOunI5kEOiFQ&s'>
+      height: 90vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 40px;
+    }
+
+    .hero h2 {
+      font-size: 3em;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      font-size: 1.2em;
+      max-width: 600px;
+    }
+
+ .trailer, .features, .cta, .levels {
+      padding: 60px 40px;
+      text-align: center;
+    }
+
+    .trailer iframe {
+      width: 80%;
+      height: 450px;
+      border: none;
+    }
+
+    .features, .levels-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 40px;
+      text-align: left;
+    }
+
+    .feature-card, .level-card {
+      background: #222;
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    .levels-button {
+      padding: 15px 30px;
+      font-size: 1.2em;
+      background: #ff4a4a;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      color: #fff;
+      margin-top: 20px;
+    }
+
+    footer {
+      background: #000;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9em;
+      border-top: 1px solid #444;
+    }
+  </style>
+  
+</head>
+<body>
+
+  <header>
+    <h1>Control+Alt Steal</h1>
+    <nav>
+      <a href="#trailer">Trailer</a>
+      <a href="#features">Features</a>
+      <a href="#levels">Levels</a>
+    </nav>
+  </header>
+
+  <section class="hero">
     <div>
-      <h1>Control+Alt+Steal</h1>
+      <h2>Welcome to Control+Alt Steal</h2>
+      <p>experience the ultimate crime mystery. Be the detective you always aspired to be and have fun!</p>
     </div>
-</button>
-<br><br>
- <span id="right" onclick="scroll_left();" style="font-size:200%;font-weight:bold;">
-&lArr;
-</span>
-&nbsp;
- <span class="level" id="url_display" id="level-span">
-<a href="level1.html" style="color:#22D;font-size:200%;text-decoration:none;">level1</a>
-  </span>
-&nbsp;
- <span class="level" id="select" onclick="scroll_right();" style="font-size:200%;font-weight:bold;">
-&rArr;
-</span>
-  </span>
-</span>
-<br>
-<br>
-<br>
-<button>
-<a href="http://172.27.67.33/~layla/gameveiw/">game overveiw</a>
-</button>
-  </body>
+  </section>
+
+  <section id="trailer" class="trailer">
+    <h2>Watch the Trailer</h2>
+    <iframe src="" allowfullscreen></iframe>
+  </section>
+
+  <section id="features" class="features">
+    <div class="feature-card">
+      <h3>Clues</h3>
+      <p>Explore each crime scene provided in each level. You can click around to find clues to help solve the myste>
+    </div>
+    <div class="feature-card">
+      <h3>suspects</h3>
+      <p>In each level you will be given a list of suspects. Use this to your advantage when solving the case.</p>
+    </div>
+    <div class="feature-card">
+      <h3>difficulty in levels</h3>
+      <p>As you advance through the levels, clues will get trickier and the number of suspects given will increase.<>
+    </div>
+  </section>
+
+  <section id="download" class="cta">
+    <h2>Explore More</h2>
+    <p>Curious about what lies ahead? Check out all the levels in GameTitle!</p>
+    <a href="#levels"><button class="levels-button">View All Levels</button></a>
+  </section>
+
+  <section id="levels" class="levels">
+    <h2>Game Levels</h2>
+    <div class="levels-grid">
+      <div class="level-card" onclick="window.location.href='../level1'">
+         <h3>Level 1: Gambling gone wrong</h3>
+        <p>figure out who killed Walter Griggs in his pent house after a late night out. </p>
+      </div>
+      <div class="level-card" onclick="window.location.href='../level2'">
+        <h3>Level 2: Leonardo De Missing</h3>
+        <p>Figure out who stole Leonardo Da Vinci</p>
+      </div>
+      <div class="level-card" onclick="window.location.href='../level3'">
+        <h3>Level 3: Spill the tea</h3>
+        <p>firgure out who shoot Bailey in the heart.</p>
+      </div>
+      <div class="level-card" onclick="window.location.href='../level4'">
+        <h3>Level 4: Stolen Crate </h3>
+        <p>firgure out who stole the mysteriouse crate.</p>
+      </div>
+<div class="level-card" onclick="window.location.href='../level5'">
+        <h3>Level 5: Who dummed Garry</h3>
+        <p>firgure out who killed Garry and dumbed him in the lake.</p>
+      </div>
+<div class="level-card" onclick="window.location.href='../level6'">
+        <h3>Level 6: Cha-Ching</h3>
+        <p>firgure out who killed the weathiest man of Crime City.</p>
+      </div>
+<div class="level-card" onclick="window.location.href='../level7'">
+        <h3>Level 7: forget about school</h3>
+        <p>firgure out who killed and inocent student.</p>
+      </div>
+<div class="level-card" onclick="window.location.href='../level8'">
+        <h3>Level 8: Uber-Eating</h3>
+        <p>firgure out the family connections and who the muderer was.</p>
+      </div>
+<div class="level-card" onclick="window.location.href='../level9'">
+        <h3>Level 9: Hacking or lacking</h3>
+        <p>firgure out hacked the system.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 GameStudio. All rights reserved.
+  </footer>
+
+</body>
 </html>
+
+
+
 
 
 
